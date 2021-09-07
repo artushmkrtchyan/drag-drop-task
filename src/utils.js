@@ -5,10 +5,10 @@ export const DND_TYPES = {
     groupItems: 'group_items',
 };
 
-export const getNewGroupe = () => [
+export const getNewGroupe = (name = 'Group Details') => [
     {
         id: uuidv4(),
-        name: 'Group Details 3',
+        name,
         fields: [
             {
                 type: 'Input',
@@ -119,6 +119,7 @@ export const getNewGroupItem = () => [
                 type: 'Input',
                 value: '',
                 name: 'price',
+                prefix: '$',
             },
             {
                 type: 'Switch',
@@ -219,6 +220,7 @@ export const GROUPS = [
                         type: 'Input',
                         value: '1.5',
                         name: 'price',
+                        prefix: '$',
                     },
                     {
                         type: 'Switch',
@@ -254,6 +256,7 @@ export const GROUPS = [
                         type: 'Input',
                         value: '1.5',
                         name: 'price',
+                        prefix: '$',
                     },
                     {
                         type: 'Switch',
@@ -290,6 +293,7 @@ export const GROUPS = [
                         type: 'Input',
                         value: '1.5',
                         name: 'price',
+                        prefix: '$',
                     },
                     {
                         type: 'Switch',
@@ -389,6 +393,7 @@ export const GROUPS = [
                         type: 'Input',
                         value: '1.5',
                         name: 'price',
+                        prefix: '$',
                     },
                     {
                         type: 'Switch',
@@ -424,6 +429,7 @@ export const GROUPS = [
                         type: 'Input',
                         value: '1.5',
                         name: 'price',
+                        prefix: '$',
                     },
                     {
                         type: 'Switch',
@@ -459,6 +465,7 @@ export const GROUPS = [
                         type: 'Input',
                         value: '1.5',
                         name: 'price',
+                        prefix: '$',
                     },
                     {
                         type: 'Switch',

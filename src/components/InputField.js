@@ -2,7 +2,7 @@ import React from 'react';
 import { Input, Checkbox, Switch, Select, Upload } from 'antd';
 
 export default function InputField({ item, onChange = () => {} }) {
-    const { type = '', name, value, options = [], prefixe, label } = item;
+    const { type = '', name, value, options = [], prefix, label } = item;
 
     const handleChangeInput = (e) => {
         const value = e.target ? e.target.value || e.target.checked : e;
@@ -26,7 +26,7 @@ export default function InputField({ item, onChange = () => {} }) {
                     onChange={handleChangeInput}
                     name={name}
                     value={value}
-                    prefixe={prefixe}
+                    prefix={prefix}
                 />
             </div>
         );

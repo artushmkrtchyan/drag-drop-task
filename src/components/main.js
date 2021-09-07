@@ -26,7 +26,7 @@ const Main = () => {
     const handleAddNewGroupe = () => {
         setGroups(
             update(groups, {
-                $push: getNewGroupe(),
+                $push: getNewGroupe(`Group Details ${groups.length + 1}`),
             }),
         );
     };
@@ -44,10 +44,7 @@ const Main = () => {
                 />
             ))}
             <div className="add-new-groupe">
-                <Button
-                    type="primary"
-                    onClick={handleAddNewGroupe}
-                >
+                <Button type="primary" onClick={handleAddNewGroupe}>
                     New Group
                 </Button>
             </div>
